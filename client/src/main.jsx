@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Profile from './pages/Profile';
 import Signup from './pages/Signup.jsx';
-// import Dashbaord from './pages/Dashboard.jsx';
+import Dashbaord from './pages/Dashboard.jsx';
 // import ManageSessions from './pages/ManageSessions.jsx';
 
 

@@ -1,3 +1,8 @@
+import SessionList from "../components/SessionList";
+import Share from "../components/Share";
+
+
+
 function Dashbaord() {
 
 
@@ -8,4 +13,6 @@ function Dashbaord() {
     
 }
 
-export default Dashbaord;
+
+  
+  export default Dashboard;

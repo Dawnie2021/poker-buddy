@@ -1,3 +1,5 @@
+import AddSessions from "../components/AddSessions";
+
 function ManageSessions() {
 
 
