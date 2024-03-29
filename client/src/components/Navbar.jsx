@@ -16,6 +16,12 @@ function Navbar() {
         <Link to="/me">
           {Auth.getProfile().data.username}&lsquo;s profile
         </Link>
+        <Link to="/">
+          Dashboard
+        </Link>
+        <Link to="/">
+          Manage Session
+        </Link>
         <button onClick={logout}>
           Logout
         </button>
