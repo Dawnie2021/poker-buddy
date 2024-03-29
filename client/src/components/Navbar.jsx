@@ -13,9 +13,9 @@ function Navbar() {
         <Link to="/">
           Home
         </Link>
-        <Link to="/me">
+        {/* <Link to="/me">
           {Auth.getProfile().data.username}&lsquo;s profile
-        </Link>
+        </Link> */}
         <Link to="/dashboard">
           Dashboard
         </Link>

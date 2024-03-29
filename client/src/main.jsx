@@ -2,13 +2,14 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import App from './App.jsx';
-import Error from './pages/Signup.jsx';
+import Error from './pages/Error.jsx';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Profile from './pages/Profile';
 import Signup from './pages/Signup.jsx';
-import Dashbaord from './pages/Dashboard.jsx';
-// import ManageSessions from './pages/ManageSessions.jsx';
+import Dashboard from './pages/Dashboard.jsx';
+import ManageSessions from './pages/ManageSessions.jsx';
+
 
 
 const router = createBrowserRouter([
@@ -36,6 +37,14 @@ const router = createBrowserRouter([
         path: '/me',
         element: <Profile />
       },
+      {
+        path: '/dashboard',
+        element: <Dashboard />
+      },
+      {
+        path: '/managesessions',
+        element: <ManageSessions />
+      }
     ]
   }
 ])
