@@ -2,6 +2,7 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import App from './App.jsx';
+import '@picocss/pico/css/pico.min.css';
 import Error from './pages/Signup.jsx';
 import Home from './pages/Home';
 import Login from './pages/Login';
