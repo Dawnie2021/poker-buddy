@@ -18,10 +18,11 @@ function Home() {
   
 
   return (
-    <>
-      {/* <div>Home</div> */}
-      <UserList users={users} />
-    </>
+    
+    <h1>Home Page (Add whatever in here)</h1>
+    
+     
+  
   );
 }
 
