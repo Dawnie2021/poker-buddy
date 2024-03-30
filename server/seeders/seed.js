@@ -15,5 +15,16 @@ db.once('open', async () => {
   process.exit(0);
 });
 
+db.once('open', async () => {
+  try {
+    await ManageSessions.deleteMany({});
+    await ManageSessions.create(manageSessionsSeeds);
+  } catch (err) {
+    console.error(err);
+    process.exit(1);
+  }
+  process.exit(0);
+});
+
 
 

@@ -1,23 +1,32 @@
 [
     {
-     "date": "March 5, 2024",
-     "location": "Del Lago",
-     "results": "+500",
-     "notes":  "Scott likes to bluff alot"
+        "date": "2024-03-30",
+        "location": "Home",
+        "results": {
+            "buy_in": 100,
+            "cash_out": 250,
+            "profit": 150
+        },
+        "notes": "Played Texas Hold'em with friends. Had a good run with some lucky hands."
     },
-
     {
-        "date": "March 9, 2024",
-        "location": "Turning Stone",
-        "results": "-250",
-        "notes":  "Veerab is really good"
+        "date": "2024-03-28",
+        "location": "The Golden Casino",
+        "results": {
+            "buy_in": 500,
+            "cash_out": 700,
+            "profit": 200
+        },
+        "notes": "Participated in a tournament. Managed to reach the final table and secure a decent profit."
     },
-
     {
-        "date": "March 25, 2024",
-        "location": "Del Lago",
-        "results": "+900",
-        "notes":  "Game was okay"
-       }
-
+        "date": "2024-03-25",
+        "location": "Online",
+        "results": {
+            "buy_in": 50,
+            "cash_out": 0,
+            "profit": -50
+        },
+        "notes": "Experimented with a new strategy but ended up losing. Need to reassess my approach."
+    }
 ]

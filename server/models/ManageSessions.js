@@ -4,18 +4,29 @@ const { Schema, model } = require('mongoose');
 const sessionSchema = new Schema(
     {
     date: {
-        type: String,
+        type: Date,
         required: true,
         
     },
 
     location: {
         type: String,
+        required: true,
     },
 
     results: {
-        type: Number,
-        required: true,
+        buy_in: {
+            type: Number,
+            required: true
+        },
+        cash_out: {
+            type: Number,
+            required: true
+        },
+        profit: {
+            type: Number,
+            required: true
+        }
     },
 
     notes: {
