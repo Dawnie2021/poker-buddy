@@ -1,7 +1,7 @@
-const { Schema, model } = require('mongoose');
+const mongoose = require('mongoose');
 
 
-const sessionSchema = new Schema(
+const sessionSchema = new mongoose.Schema(
     {
     date: {
         type: Date,
@@ -37,6 +37,6 @@ const sessionSchema = new Schema(
 }
 );
 
-const ManageSessions = model('ManageSessions', sessionSchema);
+const ManageSessions = mongoose.model('ManageSessions', sessionSchema);
 
 module.exports = ManageSessions; 
