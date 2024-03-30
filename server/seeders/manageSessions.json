@@ -31,5 +31,42 @@
         },
         "hoursPlayed": 5,
         "notes": "Experimented with a new strategy but ended up losing. Need to reassess my approach."
+    },
+
+    {
+        "date": "2024-03-30",
+        "location": "The Mirage",
+        "results": {
+            "buy_in": 200,
+            "cash_out": 350,
+            "profit": 150
+        },
+        "hoursPlayed": 3.5,
+        "notes": "Joined a friendly poker table at The Mirage. Managed to read opponents well and hit some crucial hands, leading to a profitable session."
+    },
+
+    {
+        "date": "2024-03-30",
+        "location": "Bellagio",
+        "results": {
+            "buy_in": 300,
+            "cash_out": 600,
+            "profit": 300
+        },
+        "hoursPlayed": 5,
+        "notes": "Participated in a Sit-and-Go tournament at Bellagio. Made some aggressive moves early on and managed to secure first place."
+    },
+
+    {
+        "date": "2024-03-30",
+        "location": "Home",
+        "results": {
+            "buy_in": 50,
+            "cash_out": 80,
+            "profit": 30
+        },
+        "hoursPlayed": 2,
+        "notes": "Hosted a poker night with friends. Had a great time playing Texas Hold'em and won some pots with well-timed bluffs."
     }
+    
 ]
