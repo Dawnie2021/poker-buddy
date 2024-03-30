@@ -1,40 +1,44 @@
 const mongoose = require('mongoose');
 
-
 const sessionSchema = new mongoose.Schema(
     {
-    date: {
-        type: Date,
-        required: true,
-        
-    },
+        date: {
+            type: Date,
+            required: true,
 
-    location: {
-        type: String,
-        required: true,
-    },
+        },
 
-    results: {
-        buy_in: {
-            type: Number,
-            required: true
+        location: {
+            type: String,
+            required: true,
         },
-        cash_out: {
-            type: Number,
-            required: true
+
+        results: {
+            buy_in: {
+                type: Number,
+                required: true
+            },
+            cash_out: {
+                type: Number,
+                required: true
+            },
+            profit: {
+                type: Number,
+                required: true
+            }
         },
-        profit: {
+
+        hoursPlayed: {
             type: Number,
-            required: true
+            required: true,
+        },
+
+        notes: {
+            type: String,
+
         }
-    },
-
-    notes: {
-        type: String,
 
     }
-
-}
 );
 
 const ManageSessions = mongoose.model('ManageSessions', sessionSchema);

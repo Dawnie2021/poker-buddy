@@ -7,6 +7,7 @@
             "cash_out": 250,
             "profit": 150
         },
+        "hoursPlayed": 3,
         "notes": "Played Texas Hold'em with friends. Had a good run with some lucky hands."
     },
     {
@@ -17,6 +18,7 @@
             "cash_out": 700,
             "profit": 200
         },
+        "hoursPlayed": 4,
         "notes": "Participated in a tournament. Managed to reach the final table and secure a decent profit."
     },
     {
@@ -27,6 +29,7 @@
             "cash_out": 0,
             "profit": -50
         },
+        "hoursPlayed": 5,
         "notes": "Experimented with a new strategy but ended up losing. Need to reassess my approach."
     }
 ]
