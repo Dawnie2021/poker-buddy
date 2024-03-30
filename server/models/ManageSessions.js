@@ -18,7 +18,7 @@ const sessionSchema = new Schema(
     },
 
     notes: {
-        type: Text,
+        type: String,
 
     }
 

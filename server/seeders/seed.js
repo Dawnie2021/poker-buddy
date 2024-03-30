@@ -1,6 +1,8 @@
 const db = require('../config/connection');
 const { User } = require('../models');
 const userSeeds = require('./userSeeds.json');
+const manageSession = require('../models')
+const manageSessions = require('./manageSession.json');
 
 db.once('open', async () => {
   try {
