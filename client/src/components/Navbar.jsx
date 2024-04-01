@@ -19,6 +19,9 @@ function Navbar() {
         <Link to="/managesessions">
           Manage Sessions
         </Link>
+        <Link to="Settings">
+          Settings
+        </Link>
         <button onClick={logout}>
           Logout
         </button>
