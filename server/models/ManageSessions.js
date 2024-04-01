@@ -9,12 +9,10 @@ const sessionSchema = new mongoose.Schema(
         },
 
         endDate: {
-           type: Date,
-           required: false,
-         
-        },
+            type: Date,
+            required: false,
 
-        
+        },
 
         location: {
             type: String,
@@ -22,7 +20,7 @@ const sessionSchema = new mongoose.Schema(
         },
 
         results: {
-           type: Number,
+            type: Number,
             required: true
         },
 
