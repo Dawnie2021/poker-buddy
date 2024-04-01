@@ -21,7 +21,7 @@ function Home() {
     
   
     
-     <img src="https://img.freepik.com/free-vector/poker-game-background-with-playing-cards_1017-33703.jpg" alt="poker"></img>
+     <img src="https://img.freepik.com/free-vector/poker-game-background-with-playing-cards_1017-33703.jpg" width="100%"></img>
   
   );
 }
