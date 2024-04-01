@@ -22,18 +22,8 @@ const sessionSchema = new mongoose.Schema(
         },
 
         results: {
-            buy_in: {
-                type: Number,
-                required: true
-            },
-            cash_out: {
-                type: Number,
-                required: true
-            },
-            profit: {
-                type: Number,
-                required: true
-            }
+           type: Number,
+            required: true
         },
 
         notes: {
