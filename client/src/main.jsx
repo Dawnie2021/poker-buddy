@@ -11,7 +11,7 @@ import Dashboard from './pages/Dashboard.jsx';
 import ManageSessions from './pages/ManageSessions.jsx';
 import Settings from './pages/Settings.jsx';
 import { element } from 'prop-types';
-
+import './index.css';
 
 
 const router = createBrowserRouter([
