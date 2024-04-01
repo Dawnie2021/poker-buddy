@@ -19,9 +19,9 @@ function Home() {
 
   return (
     
-    <h1>Home Page (Add whatever in here)</h1>
+  
     
-     
+     <img src="https://img.freepik.com/free-vector/poker-game-background-with-playing-cards_1017-33703.jpg" alt="poker"></img>
   
   );
 }

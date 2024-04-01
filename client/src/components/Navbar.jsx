@@ -5,7 +5,7 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Home', href: '#', current: true },
+  { name: 'Home', href: './', current: true },
   { name: 'Dashboard', href: './Dashboard', current: false },
   { name: 'Manage Sessions', href: './ManageSessions', current: false },
   { name: 'Log In ', href: './login', current: false },
@@ -36,15 +36,8 @@ export default function Navbar () {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="flex flex-shrink-0 items-center">
-                  <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    alt="Your Company"
-                  />
-                </div>
                 <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-4">
+                 <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <a
                         key={item.name}
@@ -70,7 +63,7 @@ export default function Navbar () {
                       <span className="sr-only">Open user menu</span>
                       <img
                         className="h-8 w-8 rounded-full"
-                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        src="https://media.istockphoto.com/id/185013532/photo/red-poker-chip.webp?b=1&s=170667a&w=0&k=20&c=WyEBfGKN_V_b_ii4Gu1SS_vBwaZ18HZL8Pyn9lYre7A="
                         alt=""
                       />
                     </Menu.Button>
