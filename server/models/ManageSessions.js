@@ -2,11 +2,19 @@ const mongoose = require('mongoose');
 
 const sessionSchema = new mongoose.Schema(
     {
-        date: {
+        startDate: {
             type: Date,
             required: true,
 
         },
+
+        endDate: {
+           type: Date,
+           required: false,
+         
+        },
+
+        
 
         location: {
             type: String,
@@ -26,11 +34,6 @@ const sessionSchema = new mongoose.Schema(
                 type: Number,
                 required: true
             }
-        },
-
-        hoursPlayed: {
-            type: Number,
-            required: true,
         },
 
         notes: {

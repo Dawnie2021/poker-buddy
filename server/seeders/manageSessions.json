@@ -1,6 +1,6 @@
 [
     {
-        "date": "2024-03-30",
+        "startDate": "2024-03-30",
         "location": "Home",
         "results": {
             "buy_in": 100,
@@ -11,7 +11,7 @@
         "notes": "Played Texas Hold'em with friends. Had a good run with some lucky hands."
     },
     {
-        "date": "2024-03-28",
+        "startDate": "2024-03-28",
         "location": "The Golden Casino",
         "results": {
             "buy_in": 500,
@@ -22,7 +22,7 @@
         "notes": "Participated in a tournament. Managed to reach the final table and secure a decent profit."
     },
     {
-        "date": "2024-03-25",
+        "startDate": "2024-03-25",
         "location": "Online",
         "results": {
             "buy_in": 50,
@@ -34,7 +34,7 @@
     },
 
     {
-        "date": "2024-03-30",
+        "startDate": "2024-03-30",
         "location": "The Mirage",
         "results": {
             "buy_in": 200,
@@ -46,7 +46,7 @@
     },
 
     {
-        "date": "2024-03-30",
+        "startDate": "2024-03-30",
         "location": "Bellagio",
         "results": {
             "buy_in": 300,
@@ -58,7 +58,7 @@
     },
 
     {
-        "date": "2024-03-30",
+        "startDate": "2024-03-30",
         "location": "Home",
         "results": {
             "buy_in": 50,
