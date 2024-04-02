@@ -1,5 +1,5 @@
 const { GraphQLError } = require('graphql');
-const { User, ManageSessions } = require('../models');
+const { User, ManageSession } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
@@ -15,6 +15,9 @@ const resolvers = {
         return User.findOne({ _id: context.user._id });
       }
       throw new GraphQLError('You need to be logged in!');
+    },
+    manageSessions: async () => {
+      return ManageSession.find();
     },
   },
 

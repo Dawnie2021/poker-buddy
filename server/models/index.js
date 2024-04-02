@@ -1,4 +1,4 @@
 const User = require('./User');
-const ManageSessions = require('./ManageSessions')
+const ManageSession = require('./ManageSession')
 
-module.exports = { User, ManageSessions};
+module.exports = { User, ManageSession};

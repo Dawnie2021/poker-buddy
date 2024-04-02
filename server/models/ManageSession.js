@@ -24,6 +24,11 @@ const sessionSchema = new mongoose.Schema(
             required: true
         },
 
+        hoursPlayed: {
+            type: Number,
+            required: true,
+        },
+
         notes: {
             type: String,
 
@@ -32,6 +37,6 @@ const sessionSchema = new mongoose.Schema(
     }
 );
 
-const ManageSessions = mongoose.model('ManageSessions', sessionSchema);
+const ManageSession = mongoose.model('ManageSession', sessionSchema);
 
-module.exports = ManageSessions; 
+module.exports = ManageSession; 
