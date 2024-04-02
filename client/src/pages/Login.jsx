@@ -64,7 +64,7 @@ const Login = () => {
           value={formState.password}
           onChange={handleChange}
         />
-        <button class="bg-red-500 hover:bg-red-700 text-black font-bold py-2 px-4 border border-blue-700 rounded">
+        <button class="bg-transparent hover:bg-red-500 text-black-900 font-semibold hover:text-white py-2 px-4 border border-red-800 hover:border-transparent rounded">
   LogIn
 </button>
       </form>
