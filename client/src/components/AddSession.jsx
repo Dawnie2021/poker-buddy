@@ -103,7 +103,7 @@ export default function AddSessions() {
           <div className="mt-8">
             <button
               type="submit"
-              className="block w-full rounded-md bg-red-600 px-.5 py-2.5 text-center text-sm font-semibold text-black shadow-sm hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="block w-full rounded-md bg-gray-900 px-.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-red-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Add Session
             </button>
