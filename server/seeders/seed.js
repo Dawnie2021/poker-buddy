@@ -1,8 +1,8 @@
 const db = require('../config/connection');
-const { User, ManageSession } = require('../models');
+const { User, AddSession } = require('../models');
 
 const userSeeds = require('./userSeeds.json');
-const manageSessionSeeds = require('./manageSession.json');
+const AddSessionSeeds = require('./addSession.json');
 
 db.once('open', async () => {
   try {
@@ -17,8 +17,8 @@ db.once('open', async () => {
 
 db.once('open', async () => {
   try {
-    await ManageSession.deleteMany({});
-    await ManageSession.create(manageSessionSeeds);
+    await AddSession.deleteMany({});
+    await AddSession.create(AddSessionSeeds);
   } catch (err) {
     console.error(err);
     process.exit(1);

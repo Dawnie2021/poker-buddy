@@ -9,6 +9,7 @@ import Profile from './pages/Profile';
 import Signup from './pages/Signup.jsx';
 import Dashboard from './pages/Dashboard.jsx';
 import ManageSessions from './pages/ManageSessions.jsx';
+import AddSessions from './components/AddSession.jsx'
 import Settings from './pages/Settings.jsx';
 import { element } from 'prop-types';
 import './index.css';
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
       {
       path: '/settings',
       element: <Settings />
+      },
+      {
+      path: '/addSession',
+      element: <AddSessions />
       }
     ]
   }

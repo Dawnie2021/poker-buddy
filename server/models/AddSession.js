@@ -37,6 +37,6 @@ const sessionSchema = new mongoose.Schema(
     }
 );
 
-const ManageSession = mongoose.model('ManageSession', sessionSchema);
+const AddSession = mongoose.model('AddSession', sessionSchema);
 
-module.exports = ManageSession; 
+module.exports = AddSession; 

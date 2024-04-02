@@ -10,7 +10,7 @@ const typeDefs = `#graphql
     token: ID!
     user: User
   }
-  type ManageSession {
+  type AddSession {
   _id: ID
   startDate: String
   endDate: String
@@ -24,7 +24,7 @@ const typeDefs = `#graphql
     users: [User]
     user(id: ID!): User
     me: User
-    manageSessions: [ManageSession]
+    addSessions: [AddSession]
   }
 
 
