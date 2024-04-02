@@ -1,12 +1,12 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useMutation } from '@apollo/client';
-import { LOGIN_USER } from '../utils/mutations';
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { useMutation } from "@apollo/client";
+import { LOGIN_USER } from "../utils/mutations";
 
-import Auth from '../utils/auth';
+import Auth from "../utils/auth";
 
 const Login = () => {
-  const [formState, setFormState] = useState({ email: '', password: '' });
+  const [formState, setFormState] = useState({ email: "", password: "" });
   const [login, { error, data }] = useMutation(LOGIN_USER);
 
   // update state based on form input changes
@@ -34,8 +34,8 @@ const Login = () => {
 
     // clear form values
     setFormState({
-      email: '',
-      password: '',
+      email: "",
+      password: "",
     });
   };
 
@@ -43,11 +43,10 @@ const Login = () => {
     if (data) {
       return (
         <p>
-          Success! You may now head{' '}
-          <Link to="/">back to the homepage.</Link>
+          Success! You may now head <Link to="/">back to the homepage.</Link>
         </p>
-      )
-    } 
+      );
+    }
     return (
       <form onSubmit={handleFormSubmit}>
         <input
@@ -65,10 +64,9 @@ const Login = () => {
           onChange={handleChange}
         />
         <button class="bg-transparent hover:bg-red-500 text-black-900 font-semibold hover:text-white py-2 px-4 border border-red-800 hover:border-transparent rounded">
-  LogIn
-</button>
+          LogIn
+        </button>
       </form>
-    
     );
   };
 
@@ -81,6 +79,5 @@ const Login = () => {
       </div>
     </main>
   );
-
 };
 export default Login;

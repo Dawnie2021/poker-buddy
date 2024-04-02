@@ -1,13 +1,3 @@
-const SessionList = ({}) => {
-
-
-
-
-
-
-
-}
-
-
+const SessionList = ({}) => {};
 
 export default SessionList;

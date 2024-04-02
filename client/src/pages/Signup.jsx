@@ -1,16 +1,16 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
-import { useMutation } from '@apollo/client';
-import { ADD_USER } from '../utils/mutations';
+import { useMutation } from "@apollo/client";
+import { ADD_USER } from "../utils/mutations";
 
-import Auth from '../utils/auth';
+import Auth from "../utils/auth";
 
 const Signup = () => {
   const [formState, setFormState] = useState({
-    username: '',
-    email: '',
-    password: '',
+    username: "",
+    email: "",
+    password: "",
   });
   const [addUser, { error, data }] = useMutation(ADD_USER);
 
@@ -40,12 +40,11 @@ const Signup = () => {
   const renderForm = () => {
     if (data) {
       return (
-      <p>
-        Success! You may now head{' '}
-        <Link to="/">back to the homepage.</Link>
-      </p>
-      )
-    } 
+        <p>
+          Success! You may now head <Link to="/">back to the homepage.</Link>
+        </p>
+      );
+    }
     return (
       <form onSubmit={handleFormSubmit}>
         <input
@@ -69,9 +68,9 @@ const Signup = () => {
           value={formState.password}
           onChange={handleChange}
         />
-         <button class="bg-transparent hover:bg-red-500 text-black-900 font-semibold hover:text-white py-2 px-4 border border-red-800 hover:border-transparent rounded">
-  LogIn
-</button>
+        <button class="bg-transparent hover:bg-red-500 text-black-900 font-semibold hover:text-white py-2 px-4 border border-red-800 hover:border-transparent rounded">
+          LogIn
+        </button>
       </form>
     );
   };

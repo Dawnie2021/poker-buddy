@@ -1,13 +1,3 @@
-const Share = ({}) => {
-
-
-
-
-
-
-
-}
-
-
+const Share = ({}) => {};
 
 export default Share;

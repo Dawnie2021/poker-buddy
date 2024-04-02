@@ -1,13 +1,3 @@
-const Chart = ({}) => {
-
-
-
-
-
-
-
-}
-
-
+const Chart = ({}) => {};
 
 export default Chart;
