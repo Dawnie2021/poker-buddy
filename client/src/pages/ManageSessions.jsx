@@ -10,7 +10,7 @@ export default function ManageSessions() {
   const [agreed, setAgreed] = useState(false)
 
   return (
-    <div className="bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200 ...">
+    <div className="bg-gradient-to-r from-red-500 via-red-400 to-red-300 ...">
     <div className="flex justify-center ...">
 
       <form action="#" method="POST" className="mx-auto -16 max-w-xl sm:mt-10">
@@ -85,7 +85,7 @@ export default function ManageSessions() {
         <div className="mt-8">
           <button
             type="submit"
-            className="block w-full rounded-md bg-purple-500 px-.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="block w-full rounded-md bg-red-600 px-.5 py-2.5 text-center text-sm font-semibold text-black shadow-sm hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Add Session
           </button>
