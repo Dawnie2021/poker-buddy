@@ -10,6 +10,7 @@ export default function ManageSessions() {
   const [agreed, setAgreed] = useState(false)
 
   return (
+    <div className="flex justify-center ...">
     <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
       <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
@@ -89,6 +90,7 @@ export default function ManageSessions() {
           </button>
         </div>
       </form>
+    </div>
     </div>
   )
 }
