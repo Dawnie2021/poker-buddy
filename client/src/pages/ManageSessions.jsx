@@ -4,14 +4,14 @@ export default function ManageSessions() {
   return (
     <>
     <div>
-      <div className="px-4 sm:px-0">
-        <h3 className="text-center font-bold leading-7 text-gray-900">
+      <div className="px-4 sm:px-">
+        <h3 className="text-base font-bold leading-7 text-red-800">
           Session Details
         </h3>
       </div>
       <div className="mt-6 border-t border-gray-100">
         <dl className="divide-y divide-gray-100">
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-2 py-2 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-1">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Date
             </dt>
@@ -19,7 +19,7 @@ export default function ManageSessions() {
             2024-03-30
             </dd>
           </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-1">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Location
             </dt>
@@ -27,7 +27,7 @@ export default function ManageSessions() {
             Home
             </dd>
           </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-1">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Results
             </dt>
@@ -35,7 +35,7 @@ export default function ManageSessions() {
             -500
             </dd>
           </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-0">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Hours Played
             </dt>
@@ -43,7 +43,7 @@ export default function ManageSessions() {
               3
             </dd>
           </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-0">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Notes
             </dt>
@@ -57,14 +57,14 @@ export default function ManageSessions() {
  
 
 <div>
-      <div className="px-4 sm:px-0">
-        <h3 className="text-center font-bold leading-7 text-gray-900">
+      <div className="px-4 sm:px-">
+        <h3 className="text-base font-bold leading-7 text-red-700">
           Session Details
         </h3>
       </div>
       <div className="mt-6 border-t border-gray-100">
         <dl className="divide-y divide-gray-100">
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-0">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Date
             </dt>
@@ -72,7 +72,7 @@ export default function ManageSessions() {
             2024-03-28
             </dd>
           </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-0">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Location
             </dt>
@@ -80,7 +80,7 @@ export default function ManageSessions() {
             The Golden Casino
             </dd>
           </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-0">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Results
             </dt>
@@ -88,7 +88,7 @@ export default function ManageSessions() {
               300
             </dd>
           </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-0">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Hours Played
             </dt>
@@ -96,7 +96,7 @@ export default function ManageSessions() {
               4
             </dd>
           </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-0">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Notes
             </dt>
@@ -109,14 +109,14 @@ export default function ManageSessions() {
     </div>
 
     <div>
-      <div className="px-4 sm:px-0">
-        <h3 className="text-center font-bold leading-7 text-gray-900">
+      <div className="px-4 sm:px-">
+        <h3 className="text-base font-bold leading-7 text-red-700">
           Session Details
         </h3>
       </div>
       <div className="mt-6 border-t border-gray-100">
         <dl className="divide-y divide-gray-100">
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-0">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Date
             </dt>
@@ -124,7 +124,7 @@ export default function ManageSessions() {
             2024-03-25
             </dd>
           </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-0">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Location
             </dt>
@@ -132,7 +132,7 @@ export default function ManageSessions() {
               Online
             </dd>
           </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-0">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Results
             </dt>
@@ -140,7 +140,7 @@ export default function ManageSessions() {
               -150
             </dd>
           </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-0">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Hours Played
             </dt>
@@ -148,7 +148,7 @@ export default function ManageSessions() {
               5
             </dd>
           </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-0">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Notes
             </dt>
@@ -161,14 +161,14 @@ export default function ManageSessions() {
     </div>
 
     <div>
-      <div className="px-4 sm:px-0">
-        <h3 className="text-center font-bold leading-7 text-gray-900">
+      <div className="px-4 sm:px-">
+        <h3 className="text-base font-bold leading-7 text-red-700">
           Session Details
         </h3>
       </div>
       <div className="mt-6 border-t border-gray-100">
         <dl className="divide-y divide-gray-100">
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-0">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Date
             </dt>
@@ -176,7 +176,7 @@ export default function ManageSessions() {
             2024-03-30
             </dd>
           </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-0">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Location
             </dt>
@@ -184,7 +184,7 @@ export default function ManageSessions() {
             The Mirage
             </dd>
           </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-0">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Results
             </dt>
@@ -192,7 +192,7 @@ export default function ManageSessions() {
               200
             </dd>
           </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-0">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Hours Played
             </dt>
@@ -200,7 +200,7 @@ export default function ManageSessions() {
               3.5
             </dd>
           </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-0">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Notes
             </dt>
@@ -213,14 +213,14 @@ export default function ManageSessions() {
     </div>
 
     <div>
-      <div className="px-4 sm:px-0">
-        <h3 className="text-center font-bold leading-7 text-gray-900">
+      <div className="px-4 sm:px-">
+        <h3 className="text-base font-bold leading-7 text-red-700">
           Session Details
         </h3>
       </div>
       <div className="mt-6 border-t border-gray-100">
         <dl className="divide-y divide-gray-100">
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-0">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Date
             </dt>
@@ -228,7 +228,7 @@ export default function ManageSessions() {
             2024-03-30
             </dd>
           </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-0">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Location
             </dt>
@@ -236,7 +236,7 @@ export default function ManageSessions() {
             Bellagio
             </dd>
           </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-0">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Results
             </dt>
@@ -244,7 +244,7 @@ export default function ManageSessions() {
               400
             </dd>
           </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-0">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Hours Played
             </dt>
@@ -252,7 +252,7 @@ export default function ManageSessions() {
               5
             </dd>
           </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-0">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Notes
             </dt>
@@ -265,14 +265,14 @@ export default function ManageSessions() {
     </div>
 
     <div>
-      <div className="px-4 sm:px-0">
-        <h3 className="text-center font-bold leading-7 text-gray-900">
+      <div className="px-4 sm:px-">
+        <h3 className="text-base font-bold leading-7 text-red-700">
           Session Details
         </h3>
       </div>
       <div className="mt-6 border-t border-gray-100">
         <dl className="divide-y divide-gray-100">
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-0">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Date
             </dt>
@@ -280,7 +280,7 @@ export default function ManageSessions() {
             2024-03-30
             </dd>
           </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-0">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Location
             </dt>
@@ -288,7 +288,7 @@ export default function ManageSessions() {
               Home
             </dd>
           </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-0">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Results
             </dt>
@@ -296,7 +296,7 @@ export default function ManageSessions() {
               100
             </dd>
           </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-0">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Hours Played
             </dt>
@@ -304,7 +304,7 @@ export default function ManageSessions() {
               2
             </dd>
           </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-0">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Notes
             </dt>
@@ -317,14 +317,14 @@ export default function ManageSessions() {
     </div>
 
     <div>
-      <div className="px-4 sm:px-0">
-        <h3 className="text-center font-bold leading-7 text-gray-900">
+      <div className="px-4 sm:px-">
+        <h3 className="text-base font-bold leading-7 text-red-700">
           Session Details
         </h3>
       </div>
       <div className="mt-6 border-t border-gray-100">
         <dl className="divide-y divide-gray-100">
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-0">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Date
             </dt>
@@ -332,7 +332,7 @@ export default function ManageSessions() {
             2024-03-30
             </dd>
           </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-0">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Location
             </dt>
@@ -340,7 +340,7 @@ export default function ManageSessions() {
               Lago
             </dd>
           </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-0">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Results
             </dt>
@@ -348,7 +348,7 @@ export default function ManageSessions() {
               900
             </dd>
           </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-0">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Hours Played
             </dt>
@@ -356,7 +356,7 @@ export default function ManageSessions() {
               5
             </dd>
           </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <div className="px-4 py-6 sm:grid sm:grid-cols-12 sm:gap-4 sm:px-0">
             <dt className="text-sm font-bold leading-6 text-gray-900">
               Notes
             </dt>
