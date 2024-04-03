@@ -31,6 +31,9 @@ const typeDefs = `#graphql
   type Mutation {
     addUser(email:String!, username:String!, password:String!): Auth
     login(email:String!, password:String!): Auth
+    addSession(startDate: String, endDate: String, location: String, results: Float,  hoursPlayed: Float,  notes: String): Session   
+    updateSession(id: ID, startDate: String, endDate: String, location: String, results: Float,  hoursPlayed: Float,  notes: String): Session
+    deleteSession(sessionId: ID!): Session  
   }
 `;
 

@@ -69,7 +69,7 @@ const Signup = () => {
           onChange={handleChange}
         />
         <button type="submit" class="bg-transparent hover:bg-red-500 text-black-900 font-semibold hover:text-white py-2 px-4 border border-red-800 hover:border-transparent rounded">
-          LogIn
+          SignUp
         </button>
       </form>
     );

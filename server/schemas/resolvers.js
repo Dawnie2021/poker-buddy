@@ -19,6 +19,8 @@ const resolvers = {
     Sessions: async () => {
       return Session.find();
     },
+
+   
   },
 
   Mutation: {
@@ -43,6 +45,18 @@ const resolvers = {
       const token = signToken(user);
 
       return { token, user };
+    },
+    addSession: async (_, args) => {
+      const session = await Session.create(args);
+      return { session };
+    },
+
+    updateSession: async (parent, { Session }, args) => {
+      return await Session.findByIdAndUpdate(args.session.id);
+    },
+
+    deleteSession: async (parent, { sessionId }) => {
+      return Session.findOneAndDelete({_id: sessionId});
     }
   }
 };
