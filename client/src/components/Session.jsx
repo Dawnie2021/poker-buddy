@@ -10,7 +10,7 @@ export default function Session() {
   const [agreed, setAgreed] = useState(false);
 
   return (
-    <div className="bg-gradient-to-r from-red-500 via-red-400 to-red-300 ...">
+    <div className="flex flex-col py-3 min-h-screen bg-gradient-to-r from-red-500 via-red-400 to-red-300 ...">
       <div className="flex justify-center ...">
         <form
           action="#"
