@@ -20,7 +20,7 @@ const resolvers = {
       return Session.find();
     },
 
-   
+
   },
 
   Mutation: {
@@ -51,12 +51,14 @@ const resolvers = {
       return { session };
     },
 
-    updateSession: async (parent, { Session }, args) => {
-      return await Session.findByIdAndUpdate(args.session.id);
+    updateSession: async (parent, { id, startDate, endDate, location, results, hoursPlayed, notes }) => {
+      return await Session.findByIdAndUpdate(id, { $set: { startDate, endDate, location, results, hoursPlayed, notes } }, {
+        new: true
+      });
     },
 
     deleteSession: async (parent, { sessionId }) => {
-      return Session.findOneAndDelete({_id: sessionId});
+      return Session.findOneAndDelete({ _id: sessionId });
     }
   }
 };
