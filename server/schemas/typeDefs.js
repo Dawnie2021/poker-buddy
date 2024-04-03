@@ -10,13 +10,13 @@ const typeDefs = `#graphql
     token: ID!
     user: User
   }
-  type AddSession {
+  type Session {
   _id: ID
   startDate: String
   endDate: String
   location: String
-  results: Int
-  hoursPlayed: Int
+  results: Float
+  hoursPlayed: Float
   notes: String
   }
 
@@ -24,7 +24,7 @@ const typeDefs = `#graphql
     users: [User]
     user(id: ID!): User
     me: User
-    addSessions: [AddSession]
+    Sessions: [Session]
   }
 
 
@@ -33,5 +33,7 @@ const typeDefs = `#graphql
     login(email:String!, password:String!): Auth
   }
 `;
+
+
 
 module.exports = typeDefs;

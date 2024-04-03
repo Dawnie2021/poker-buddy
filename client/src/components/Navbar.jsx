@@ -16,7 +16,7 @@ if (!Auth.loggedIn()) {
 if (Auth.loggedIn()) {
   navigation = navigation.concat([
     { name: "Dashboard", href: "./Dashboard", current: false },
-    { name: "Add Session", href: "./AddSession", current: false },
+    { name: "Session", href: "./Session", current: false },
     { name: "Logout", onClick: Auth.logout, current: false },
   ]);
 }

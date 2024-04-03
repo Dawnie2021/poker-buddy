@@ -6,7 +6,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function AddSessions() {
+export default function Session() {
   const [agreed, setAgreed] = useState(false);
 
   return (

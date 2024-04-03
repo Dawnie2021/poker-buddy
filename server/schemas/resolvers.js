@@ -1,5 +1,5 @@
 const { GraphQLError } = require('graphql');
-const { User, AddSession } = require('../models');
+const { User, Session } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
@@ -16,8 +16,8 @@ const resolvers = {
       }
       throw new GraphQLError('You need to be logged in!');
     },
-    addSessions: async () => {
-      return AddSession.find();
+    Sessions: async () => {
+      return Session.find();
     },
   },
 

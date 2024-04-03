@@ -37,6 +37,6 @@ const sessionSchema = new mongoose.Schema(
     }
 );
 
-const AddSession = mongoose.model('AddSession', sessionSchema);
+const Session = mongoose.model('Session', sessionSchema);
 
-module.exports = AddSession; 
+module.exports = Session; 
