@@ -1,4 +1,4 @@
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 
 export const QUERY_USERS = gql`
   query users {
@@ -26,6 +26,20 @@ export const QUERY_ME = gql`
       _id
       username
       email
+    }
+  }
+`;
+
+export const QUERY_SESSION = gql`
+  query session {
+    session {
+      _id
+      startDate
+      endDate
+      location
+      results
+      hoursPlayed
+      notes
     }
   }
 `;
