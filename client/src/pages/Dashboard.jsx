@@ -11,13 +11,14 @@ const Dashboard = () => {
             const chartInstance = new Chart(chartRef.current, {
                 type: 'line',
                 data: {
-                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                    labels: ['Jan 3, 2024', 'Feb 9, 2024', 'Mar 15, 2024', 'Apr 1, 2024', 'Apr 4, 2024', 'Apr 5, 2024'],
                     datasets: [{
-                        label: 'Sales',
-                        data: [12, 19, 3, 5, 2, 3],
-                        backgroundColor: 'rgba(0, 123, 255, 0.5)',
-                        borderColor: 'rgba(0, 123, 255, 1)',
-                        borderWidth: 2
+                        label: 'Profit',
+                        data: [100, 190, -300, 500, -200, 300],
+                        backgroundColor: 'rgba(94, 53, 62, 0.5)',
+                        borderColor: '#dd0f0f',
+                        borderWidth: 3,
+                       
                     }]
                 },
                 options: {
