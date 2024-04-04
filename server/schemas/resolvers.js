@@ -47,8 +47,9 @@ const resolvers = {
       return { token, user };
     },
     addSession: async (_, args) => {
-      const session = await Session.create(args);
-      return { session };
+      console.log(args)
+      return Session.create(args);
+     
     },
 
     updateSession: async (parent, { id, startDate, endDate, location, results, hoursPlayed, notes }) => {
