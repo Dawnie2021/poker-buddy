@@ -2,6 +2,11 @@ import { useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Switch } from "@headlessui/react";
 
+import { useQuery } from '@apollo/client';
+
+import ManageSession from '../pages/ManageSessions';
+
+import { QUERY_SESSION } from '../utils/queries';
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
