@@ -39,27 +39,23 @@ const typeDefs = `#graphql
     password:String!): Auth
 
     addSession(
-    startDate: String, 
-    endDate: String, 
-    location: String, 
-    results: Float,  
-    hoursPlayed: Float,  
+    startDate: String!,  
+    location: String!, 
+    results: Float!,  
+    hoursPlayed: Float!,  
     notes: String): Session  
 
     updateSession(
-    id: ID, 
-    startDate: String, 
-    endDate: String, 
-    location: String, 
-    results: Float,  
-    hoursPlayed: Float,  
+    sessionId: ID!, 
+    startDate: String!, 
+    location: String!, 
+    results: Float!,  
+    hoursPlayed: Float!,  
     notes: String): Session
     
     deleteSession(
     sessionId: ID!): Session  
   }
 `;
-
-
 
 module.exports = typeDefs;

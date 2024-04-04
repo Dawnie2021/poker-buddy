@@ -26,12 +26,11 @@ export const ADD_USER = gql`
 
 export const ADD_SESSION = gql`
   mutation addSession(
-    $sessionId: ID!
-    $startDate: Float!
+    $startDate: String!
     $location: String!
-    $results: String!
-    $hoursPlayed: String!
-    $notes: String!
+    $results: Float!
+    $hoursPlayed: Float!
+    $notes: String
   ) {
     addSession(
       sessionId: $sessionId
@@ -54,11 +53,11 @@ export const ADD_SESSION = gql`
 export const UPDATE_SESSION = gql`
   mutation updateSession(
     $sessionId: ID!
-    $startDate: Float!
+    $startDate: String!
     $location: String!
-    $results: String!
-    $hoursPlayed: String!
-    $notes: String!
+    $results: Float!
+    $hoursPlayed: Float!
+    $notes: String
   ) {
     updateSession(
       sessionId: $sessionId
@@ -79,28 +78,9 @@ export const UPDATE_SESSION = gql`
 `;
 
 export const DELETE_SESSION = gql`
-  mutation deleteSession(
-    $sessionId: ID!
-    $startDate: Float!
-    $location: String!
-    $results: String!
-    $hoursPlayed: String!
-    $notes: String!
-  ) {
-    deleteSession(
-      sessionId: $sessionId
-      startDate: $startDate
-      location: $location
-      results: $results
-      hoursPlayed: $hoursPlayed
-      notes: $notes
-    ) {
+  mutation deleteSession($sessionId: ID!) {
+    deleteSession(sessionId: $sessionId) {
       _id
-      startDate
-      location
-      results
-      hoursPlayed
-      notes
     }
   }
 `;
