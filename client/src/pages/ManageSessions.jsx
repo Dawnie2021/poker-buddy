@@ -266,27 +266,26 @@ export default function ManageSessions() {
                 <td>
                   <strong>Location</strong>
                 </td>
-                <td className="pl-3">Home</td>
+                <td className="pl-3">Lago</td>
               </tr>
               <tr>
                 <td>
                   <strong>Results</strong>
                 </td>
-                <td className="pl-3">-500</td>
+                <td className="pl-3">900</td>
               </tr>
               <tr>
                 <td>
                   <strong>Hours</strong>
                 </td>
-                <td className="pl-3">3</td>
+                <td className="pl-3">5</td>
               </tr>
               <tr>
                 <td>
                   <strong>Notes</strong>
                 </td>
                 <td className="pl-3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
-                  neque numquam beatae minus iure illo magnam
+                Hosted a poker night with friends.
                 </td>
               </tr>
             </tbody>
