@@ -1,63 +1,41 @@
-export default function Dashboard() {
-  return (
-    <div>
-      <h1 className="text-3xl font-bold underline">DashBoard Page</h1>
-      <p className="text-blue-600">
-        This is where all of the sessions will go!
-      </p>
-    </div>
-  );
-}
+import React, { useEffect, useRef } from 'react';
+import { Chart, LineController, LinearScale, PointElement, CategoryScale, LineElement } from 'chart.js';
 
-// /* App.js */
-// import React, { Component } from 'react';
-// import CanvasJSReact from '@canvasjs/react-charts';
-// //var CanvasJSReact = require('@canvasjs/react-charts');
- 
-// var CanvasJS = CanvasJSReact.CanvasJS;
-// var CanvasJSChart = CanvasJSReact.CanvasJSChart;
-// class App extends Component {
-// 	render() {
-// 		const options = {
-// 			animationEnabled: true,
-// 			title:{
-// 				text: "Monthly Sales - 2017"
-// 			},
-// 			axisX: {
-// 				valueFormatString: "MMM"
-// 			},
-// 			axisY: {
-// 				title: "Sales (in USD)",
-// 				prefix: "$"
-// 			},
-// 			data: [{
-// 				yValueFormatString: "$#,###",
-// 				xValueFormatString: "MMMM",
-// 				type: "spline",
-// 				dataPoints: [
-// 					{ x: new Date(2017, 0), y: 25060 },
-// 					{ x: new Date(2017, 1), y: 27980 },
-// 					{ x: new Date(2017, 2), y: 42800 },
-// 					{ x: new Date(2017, 3), y: 32400 },
-// 					{ x: new Date(2017, 4), y: 35260 },
-// 					{ x: new Date(2017, 5), y: 33900 },
-// 					{ x: new Date(2017, 6), y: 40000 },
-// 					{ x: new Date(2017, 7), y: 52500 },
-// 					{ x: new Date(2017, 8), y: 32300 },
-// 					{ x: new Date(2017, 9), y: 42000 },
-// 					{ x: new Date(2017, 10), y: 37160 },
-// 					{ x: new Date(2017, 11), y: 38400 }
-// 				]
-// 			}]
-// 		}
-// 		return (
-// 		<div>
-// 			<CanvasJSChart options = {options}
-// 				/* onRef={ref => this.chart = ref} */
-// 			/>
-// 			{/*You can get reference to the chart instance as shown above using onRef. This allows you to access all chart properties and methods*/}
-// 		</div>
-// 		);
-// 	}
-// }
-// export default App;                              
+Chart.register(LineController, LinearScale, PointElement, CategoryScale, LineElement);
+
+const Dashboard = () => {
+    const chartRef = useRef(null);
+
+    useEffect(() => {
+        if (chartRef && chartRef.current) {
+            const chartInstance = new Chart(chartRef.current, {
+                type: 'line',
+                data: {
+                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                    datasets: [{
+                        label: 'Sales',
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor: 'rgba(0, 123, 255, 0.5)',
+                        borderColor: 'rgba(0, 123, 255, 1)',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+    }, []);
+
+    return (
+        <div>
+            <canvas ref={chartRef} />
+        </div>
+    );
+};
+
+export default Dashboard;
