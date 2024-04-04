@@ -5,7 +5,7 @@ export default function ManageSessions() {
     <>
       <div className="flex grid grid-cols-2 gap-5 ml-3">
         <div className="p-5 rounded-md shadow-lg">
-          <table class="table-auto">
+          <table class="table-auto w-full">
             <thead>
               <tr>
                 <th colSpan="2">
@@ -53,7 +53,7 @@ export default function ManageSessions() {
         </div>
 
         <div className="p-5 rounded-md shadow-lg">
-          <table class="table-auto">
+          <table class="table-auto w-full">
             <thead>
               <tr>
                 <th colSpan="2">
@@ -101,7 +101,7 @@ export default function ManageSessions() {
         </div>
 
         <div className="p-5 rounded-md shadow-lg">
-          <table class="table-auto">
+          <table class="table-auto w-full">
             <thead>
               <tr>
                 <th colSpan="2">
@@ -149,7 +149,7 @@ export default function ManageSessions() {
         </div>
 
         <div className="p-5 rounded-md shadow-lg">
-          <table class="table-auto">
+          <table class="table-auto w-full">
             <thead>
               <tr>
                 <th colSpan="2">
@@ -197,7 +197,7 @@ export default function ManageSessions() {
         </div>
 
         <div className="p-5 rounded-md shadow-lg">
-          <table class="table-auto">
+          <table class="table-auto w-full">
             <thead>
               <tr>
                 <th colSpan="2">
@@ -245,7 +245,7 @@ export default function ManageSessions() {
         </div>
 
         <div className="p-5 rounded-md shadow-lg">
-          <table class="table-auto">
+          <table class="table-auto w-full">
             <thead>
               <tr>
                 <th colSpan="2">

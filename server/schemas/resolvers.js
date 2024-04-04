@@ -16,10 +16,12 @@ const resolvers = {
       }
       throw new GraphQLError('You need to be logged in!');
     },
-    Sessions: async () => {
+    sessions: async () => {
       return Session.find();
     },
-
+    session: async (_, args) => {
+      return Session.findById(args.id);
+    }
 
   },
 

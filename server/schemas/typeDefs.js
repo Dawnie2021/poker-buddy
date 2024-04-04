@@ -10,51 +10,55 @@ const typeDefs = `#graphql
     token: ID!
     user: User
   }
+  
   type Session {
-  _id: ID
-  startDate: String
-  endDate: String
-  location: String
-  results: Float
-  hoursPlayed: Float
-  notes: String
+    _id: ID
+    startDate: String
+    location: String
+    results: Float
+    hoursPlayed: Float
+    notes: String
   }
 
   type Query {
     users: [User]
     user(id: ID!): User
     me: User
-    Sessions: [Session]
+    sessions: [Session]
+    session: Session
   }
 
 
   type Mutation {
     addUser(
-    email:String!, 
-    username:String!, 
-    password:String!): Auth
+      email:String!, 
+      username:String!, 
+      password:String!
+    ): Auth
 
     login(
-    email:String!, 
-    password:String!): Auth
+      email:String!, 
+      password:String!
+    ): Auth
 
     addSession(
-    startDate: String!,  
-    location: String!, 
-    results: Float!,  
-    hoursPlayed: Float!,  
-    notes: String): Session  
+      startDate: String!,  
+      location: String!, 
+      results: Float!,  
+      hoursPlayed: Float!,  
+      notes: String
+    ): Session  
 
     updateSession(
-    sessionId: ID!, 
-    startDate: String!, 
-    location: String!, 
-    results: Float!,  
-    hoursPlayed: Float!,  
-    notes: String): Session
+      sessionId: ID!, 
+      startDate: String!, 
+      location: String!, 
+      results: Float!,  
+      hoursPlayed: Float!,  
+      notes: String
+    ): Session
     
-    deleteSession(
-    sessionId: ID!): Session  
+    deleteSession(sessionId: ID!): Session  
   }
 `;
 

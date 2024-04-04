@@ -35,7 +35,6 @@ export const QUERY_SESSION = gql`
     session {
       _id
       startDate
-      endDate
       location
       results
       hoursPlayed
@@ -43,3 +42,17 @@ export const QUERY_SESSION = gql`
     }
   }
 `;
+
+export const QUERY_SESSIONS = gql`
+  query sessions {
+    sessions {
+      _id
+      startDate
+      location
+      results
+      hoursPlayed
+      notes
+    }
+  }
+`;
+
