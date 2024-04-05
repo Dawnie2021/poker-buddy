@@ -33,7 +33,6 @@ export const ADD_SESSION = gql`
     $notes: String
   ) {
     addSession(
-      sessionId: $sessionId
       startDate: $startDate
       location: $location
       results: $results
