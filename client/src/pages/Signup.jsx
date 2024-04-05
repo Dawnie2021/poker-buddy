@@ -46,38 +46,39 @@ const Signup = () => {
       );
     }
     return (
-      <form onSubmit={handleFormSubmit}>
-        <input
+      <div class="flex justify-center p-20">
+      <form class="space-x-2" onSubmit={handleFormSubmit}>
+        <input class ="border-solid border-2 border-red-700 ..."
           placeholder="Your username"
           name="username"
           type="text"
           value={formState.name}
           onChange={handleChange}
         />
-        <input
+        <input class ="border-solid border-2 border-red-700 ..."
           placeholder="Your email"
           name="email"
           type="email"
           value={formState.email}
           onChange={handleChange}
         />
-        <input
+        <input class ="border-solid border-2 border-red-700 ..."
           placeholder="******"
           name="password"
           type="password"
           value={formState.password}
           onChange={handleChange}
         />
-        <button type="submit" class="bg-transparent hover:bg-red-500 text-black-900 font-semibold hover:text-white py-2 px-4 border border-red-800 hover:border-transparent rounded">
+        <button type="submit" class="bg-red-700 hover:bg-red-500 text-black-900 font-semibold hover:text-white py-1 px-2 border border-red-800 hover:border-transparent rounded">
           SignUp
         </button>
       </form>
+      </div>
     );
   };
 
   return (
     <main>
-      <h4>Sign Up</h4>
       <div>
         {renderForm()}
         {error && <div>{error.message}</div>}
