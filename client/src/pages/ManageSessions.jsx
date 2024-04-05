@@ -1,11 +1,34 @@
-import { PaperClipIcon } from "@heroicons/react/20/solid";
+import { useQuery } from "@apollo/client";
+// import queries
+import { QUERY_SESSIONS } from "../utils/queries";
 
-export default function ManageSessions() {
+function ManageSessions() {
+  // function to get data from the query
+  const { data, loading, error } = useQuery(QUERY_SESSIONS);
+
+  // variable to store the data
+  const sessions = data?.sessions || [];
+
+  console.log(sessions)
+
+  // catch errors
+  if (error) {
+    throw Error(error);
+  }
+
+  // display loading message
+  if (loading) {
+    return <h2>Loading…</h2>;
+  }
+
+  // display the data
+  // every session is displayed in the templated table format
   return (
-    <>
-      <div className="flex grid grid-cols-2 gap-5 ml-3">
-        <div className="p-5 rounded-md shadow-lg">
-          <table class="table-auto w-full">
+    <div className="flex grid grid-cols-2 gap-5 ml-3">
+    
+        {
+        sessions.map((session) => (
+          <table className="table-auto w-full">
             <thead>
               <tr>
                 <th colSpan="2">
@@ -20,278 +43,41 @@ export default function ManageSessions() {
                 <td>
                   <strong>Date</strong>
                 </td>
-                <td className="pl-3">2024-03-30</td>
+                <td className="pl-3">{session.startDate}</td>
               </tr>
               <tr>
                 <td>
                   <strong>Location</strong>
                 </td>
-                <td className="pl-3">Home</td>
+                <td className="pl-3">{session.location}</td>
               </tr>
               <tr>
                 <td>
                   <strong>Results</strong>
                 </td>
-                <td className="pl-3">-500</td>
+                <td className="pl-3">{session.results}</td>
               </tr>
               <tr>
                 <td>
                   <strong>Hours</strong>
                 </td>
-                <td className="pl-3">3</td>
+                <td className="pl-3">{session.hoursPlayed}</td>
               </tr>
               <tr>
                 <td>
                   <strong>Notes</strong>
                 </td>
                 <td className="pl-3">
-                Played Texas Hold'em with friends. Had a good run with some lucky hands.
+                {session.notes}
                 </td>
               </tr>
             </tbody>
           </table>
-        </div>
-
-        <div className="p-5 rounded-md shadow-lg">
-          <table class="table-auto w-full">
-            <thead>
-              <tr>
-                <th colSpan="2">
-                  <h3 className="text-base font-bold leading-7 text-red-700">
-                    Session Details
-                  </h3>
-                </th>
-              </tr>
-            </thead>
-            <tbody className="text-sm">
-              <tr>
-                <td>
-                  <strong>Date</strong>
-                </td>
-                <td className="pl-3">2024-03-30</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>Location</strong>
-                </td>
-                <td className="pl-3">The Golden Casino</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>Results</strong>
-                </td>
-                <td className="pl-3">300</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>Hours</strong>
-                </td>
-                <td className="pl-3">4</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>Notes</strong>
-                </td>
-                <td className="pl-3">
-                Participated in a tournament. Managed to reach the final table and secure a decent profit.
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div className="p-5 rounded-md shadow-lg">
-          <table class="table-auto w-full">
-            <thead>
-              <tr>
-                <th colSpan="2">
-                  <h3 className="text-base font-bold leading-7 text-red-700">
-                    Session Details
-                  </h3>
-                </th>
-              </tr>
-            </thead>
-            <tbody className="text-sm">
-              <tr>
-                <td>
-                  <strong>Date</strong>
-                </td>
-                <td className="pl-3">2024-03-30</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>Location</strong>
-                </td>
-                <td className="pl-3">Online</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>Results</strong>
-                </td>
-                <td className="pl-3">150</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>Hours</strong>
-                </td>
-                <td className="pl-3">5</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>Notes</strong>
-                </td>
-                <td className="pl-3">
-                Experimented with a new strategy but ended up losing. Need to reassess my approach.
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div className="p-5 rounded-md shadow-lg">
-          <table class="table-auto w-full">
-            <thead>
-              <tr>
-                <th colSpan="2">
-                  <h3 className="text-base font-bold leading-7 text-red-700">
-                    Session Details
-                  </h3>
-                </th>
-              </tr>
-            </thead>
-            <tbody className="text-sm">
-              <tr>
-                <td>
-                  <strong>Date</strong>
-                </td>
-                <td className="pl-3">2024-03-30</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>Location</strong>
-                </td>
-                <td className="pl-3">The Mirage</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>Results</strong>
-                </td>
-                <td className="pl-3">200</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>Hours</strong>
-                </td>
-                <td className="pl-3">3.5</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>Notes</strong>
-                </td>
-                <td className="pl-3">
-                Joined a friendly poker table at The Mirage. Managed to read opponents well and hit some crucial hands, leading to a profitable session.
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div className="p-5 rounded-md shadow-lg">
-          <table class="table-auto w-full">
-            <thead>
-              <tr>
-                <th colSpan="2">
-                  <h3 className="text-base font-bold leading-7 text-red-700">
-                    Session Details
-                  </h3>
-                </th>
-              </tr>
-            </thead>
-            <tbody className="text-sm">
-              <tr>
-                <td>
-                  <strong>Date</strong>
-                </td>
-                <td className="pl-3">2024-03-30</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>Location</strong>
-                </td>
-                <td className="pl-3">Bellagio</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>Results</strong>
-                </td>
-                <td className="pl-3">400</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>Hours</strong>
-                </td>
-                <td className="pl-3">5</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>Notes</strong>
-                </td>
-                <td className="pl-3">
-                Participated in a Sit-and-Go tournament at Bellagio. Made some aggressive moves early on and managed to secure first place.
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div className="p-5 rounded-md shadow-lg">
-          <table class="table-auto w-full">
-            <thead>
-              <tr>
-                <th colSpan="2">
-                  <h3 className="text-base font-bold leading-7 text-red-700">
-                    Session Details
-                  </h3>
-                </th>
-              </tr>
-            </thead>
-            <tbody className="text-sm">
-              <tr>
-                <td>
-                  <strong>Date</strong>
-                </td>
-                <td className="pl-3">2024-03-30</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>Location</strong>
-                </td>
-                <td className="pl-3">Lago</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>Results</strong>
-                </td>
-                <td className="pl-3">900</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>Hours</strong>
-                </td>
-                <td className="pl-3">5</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>Notes</strong>
-                </td>
-                <td className="pl-3">
-                Hosted a poker night with friends.
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </>
+        ))
+      }
+    </div>
+  
   );
 }
+
+export default ManageSessions;
