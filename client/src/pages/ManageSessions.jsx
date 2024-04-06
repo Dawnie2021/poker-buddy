@@ -38,36 +38,36 @@ function ManageSessions() {
                 </th>
               </tr>
             </thead>
-            <tbody className="text-sm">
+            <tbody className="sm:px-1 p-3">
               <tr>
                 <td>
                   <strong>Date</strong>
                 </td>
-                <td className="pl-3">{session.startDate}</td>
+                <td className="px-1 py-1 sm:grid sm:grid-cols-3">{session.startDate}</td>
               </tr>
               <tr>
                 <td>
                   <strong>Location</strong>
                 </td>
-                <td className="pl-3">{session.location}</td>
+                <td className="px-1 py-1 sm:grid sm:grid-cols-3">{session.location}</td>
               </tr>
               <tr>
                 <td>
                   <strong>Results</strong>
                 </td>
-                <td className="pl-3">{session.results}</td>
+                <td className="px-1 py-1 sm:grid sm:grid-cols-9">{session.results}</td>
               </tr>
               <tr>
                 <td>
                   <strong>Hours</strong>
                 </td>
-                <td className="pl-3">{session.hoursPlayed}</td>
+                <td className="px-1 py-1 sm:grid sm:grid-cols-3">{session.hoursPlayed}</td>
               </tr>
               <tr>
                 <td>
                   <strong>Notes</strong>
                 </td>
-                <td className="pl-3">
+                <td className="px-1 py-1 sm:grid sm:grid-cols-3">
                 {session.notes}
                 </td>
               </tr>
