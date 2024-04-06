@@ -26,7 +26,7 @@ function ManageSessions() {
   return (
     <>
       {sessions.map((session) => (
-        <div className="flex grid grid-cols-2 gap-5 ml-3 p-2">
+        <div className="flex grid grid-cols-2 gap-3 ml-3 p-2">
           <div className="p-5 rounded-md shadow-lg">
             <table class="table-auto w-full">
               <thead>
@@ -93,59 +93,5 @@ function ManageSessions() {
   );
 }
 
-//           <table className="table-auto w-full">
-//           <div className="flex grid grid-cols-2 gap-5 ml-3">
-
-//             <thead>
-//               <tr>
-//                 <th colSpan="2">
-//                   <h3 className="text-base font-bold leading-7 text-red-700">
-//                     Session Details
-//                   </h3>
-//                 </th>
-//               </tr>
-//             </thead>
-//             <tbody>
-//               <tr>
-//                 <td>
-//                   <strong>Date</strong>
-//                 </td>
-//                 <td className="px-1 py-1 sm:grid sm:grid-cols-3">{session.startDate}</td>
-//               </tr>
-//               <tr>
-//                 <td>
-//                   <strong>Location</strong>
-//                 </td>
-//                 <td className="px-1 py-1 sm:grid sm:grid-cols-3">{session.location}</td>
-//               </tr>
-//               <tr>
-//                 <td>
-//                   <strong>Results</strong>
-//                 </td>
-//                 <td className="px-1 py-1 sm:grid sm:grid-cols-3">{session.results}</td>
-//               </tr>
-//               <tr>
-//                 <td>
-//                   <strong>Hours</strong>
-//                 </td>
-//                 <td className="px-1 py-1 sm:grid sm:grid-cols-3">{session.hoursPlayed}</td>
-//               </tr>
-//               <tr>
-//                 <td>
-//                   <strong>Notes</strong>
-//                 </td>
-//                 <td className="flex flex-wrap px-1 py-1 sm:grid sm:grid-cols-3">
-//                 {session.notes}
-//                 </td>
-//               </tr>
-//             </tbody>
-//           </div>
-//           </table>
-//         ))
-//       }
-
-//    </>
-//   );
-// }
 
 export default ManageSessions;
