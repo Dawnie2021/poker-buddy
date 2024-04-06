@@ -36,13 +36,13 @@ function ManageSessions() {
                       Session Details
                     </h3>
 
-                    <svg 
+                    <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
+                      fill="red"
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="object-none object-right-top w-6 h-6"
+                      className="inline-block align-text-top w-6 h-6"
                     >
                       <path
                         strokeLinecap="round"
@@ -53,6 +53,7 @@ function ManageSessions() {
                   </th>
                 </tr>
               </thead>
+
               <tbody className="text-sm">
                 <tr>
                   <td>
@@ -92,6 +93,5 @@ function ManageSessions() {
     </>
   );
 }
-
 
 export default ManageSessions;
