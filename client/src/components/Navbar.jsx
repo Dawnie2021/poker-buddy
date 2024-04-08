@@ -4,7 +4,7 @@ import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
-let navigation = [{ name: "Home", href: "./", current: false }];
+let navigation = [{ name: "Dashboard", href: "./dashboard", current: false }];
 
 if (!Auth.loggedIn()) {
   navigation = navigation.concat([
@@ -15,7 +15,6 @@ if (!Auth.loggedIn()) {
 
 if (Auth.loggedIn()) {
   navigation = navigation.concat([
-    { name: "Dashboard", href: "./Dashboard", current: false },
     { name: "Add Session", href: "./Session", current: false },
     { name: "Manage Sessions", href: "./ManageSessions", current: false },
     { name: "Logout", onClick: Auth.logout, current: false },

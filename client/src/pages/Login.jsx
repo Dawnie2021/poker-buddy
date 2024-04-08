@@ -43,7 +43,7 @@ const Login = () => {
     if (data) {
       return (
         <p>
-          Success! You may now head <Link to="/">back to the homepage.</Link>
+          Success! You may now head <Link to="/dashboard">back to the dashboard.</Link>
         </p>
       );
     }

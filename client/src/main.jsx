@@ -3,7 +3,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App.jsx";
 import Error from "./pages/Error.jsx";
-import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Profile from "./pages/Profile";
 import Signup from "./pages/Signup.jsx";
@@ -22,7 +21,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />,
+        element: <Dashboard />,
       },
       {
         path: "/login",
@@ -40,10 +39,7 @@ const router = createBrowserRouter([
         path: "/me",
         element: <Profile />,
       },
-      {
-        path: "/dashboard",
-        element: <Dashboard />,
-      },
+      
       {
         path: "/managesessions",
         element: <ManageSessions />,
