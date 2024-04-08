@@ -2,14 +2,13 @@ import { useQuery } from "@apollo/client";
 // import queries
 import { QUERY_SESSIONS } from "../utils/queries";
 import { Link } from 'react-router-dom';
+
 function ManageSessions() {
   // function to get data from the query
   const { data, loading, error } = useQuery(QUERY_SESSIONS);
 
   // variable to store the data
   const sessions = data?.sessions || [];
-
-  console.log(sessions);
 
   // catch errors
   if (error) {
@@ -25,7 +24,8 @@ function ManageSessions() {
   // every session is displayed in the templated table format
   return (
     <>
-    <div className="flex justify-end">
+
+<div className="flex justify-end">
   <Link to="/Session">
     <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full flex items-center m-5">
       <span>Add Session</span>
@@ -35,24 +35,22 @@ function ManageSessions() {
     </button>
   </Link>
 </div>
+
       {sessions.map((session) => (
         <div className="flex grid grid-cols-2 gap-3 ml-3 p-2">
           <div className="p-5 rounded-md shadow-lg">
             <table class="table-auto w-full">
-              <thead>
-                <tr>
-                  <th colSpan="2">
-                    <h3 className="text-base font-bold leading-7 text-red-700">
-                      Session Details
-                    </h3>
-
+              
+            <thead>
+              <td className="pl-3 text-lg font-bold">{session.location}</td>
+                <th>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      fill="red"
+                      fill="gray"
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="inline-block align-text-top w-6 h-6"
+                      stroke="gray"
+                      className="inline-block align-text-top w-6 h-6 float-right"
                     >
                       <path
                         strokeLinecap="round"
@@ -61,38 +59,26 @@ function ManageSessions() {
                       />
                     </svg>
                   </th>
-                </tr>
-              </thead>
+                  <th>
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 24 24" 
+                    fill="red" 
+                    className="w-6 h-6">
+                      <path fillRule="evenodd" d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z" clipRule="evenodd" />
+                    </svg>
+                  </th>
+            </thead>
 
-              <tbody className="text-sm">
+            <tbody className="text-sm">
+              <tr>
+                <td className="pl-3 text-gray-400">
+                    {session.hoursPlayed} hours
+                </td>
+              </tr>
                 <tr>
-                  <td>
-                    <strong>Date</strong>
-                  </td>
-                  <td className="pl-3">{session.startDate}</td>
+                  <td className="pl-3">$ {session.results}</td>
                 </tr>
                 <tr>
-                  <td>
-                    <strong>Location</strong>
-                  </td>
-                  <td className="pl-3">{session.location}</td>
-                </tr>
-                <tr>
-                  <td>
-                    <strong>Results</strong>
-                  </td>
-                  <td className="pl-3">{session.results}</td>
-                </tr>
-                <tr>
-                  <td>
-                    <strong>Hours</strong>
-                  </td>
-                  <td className="pl-3">{session.hoursPlayed}</td>
-                </tr>
-                <tr>
-                  <td>
-                    <strong>Notes</strong>
-                  </td>
                   <td className="pl-3">{session.notes}</td>
                 </tr>
               </tbody>
