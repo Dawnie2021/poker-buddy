@@ -39,9 +39,9 @@ const Dashboard = () => {
                         datasets: [{
                             label: 'Profit',
                             data: results,
-                            backgroundColor: 'rgba(94, 53, 62, 0.5)',
-                            borderColor: '#dd0f0f',
-                            borderWidth: 3,
+                            backgroundColor: 'rgba(39, 174, 227, 0.5)',
+                            borderColor: '<sky-2></sky-2>00',
+                            borderWidth: 2,
                         }]
                     },
                     options: {

@@ -8,7 +8,7 @@ let navigation = [];
 
 if (!Auth.loggedIn()) {
   navigation = navigation.concat([
-    { name: "Log In ", href: "./login", current: false },
+    { name: "Sign In", href: "./login", current: false },
     { name: "Sign Up ", href: "./signup", current: false },
   ]);
 }

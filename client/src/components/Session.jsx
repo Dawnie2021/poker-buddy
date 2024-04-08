@@ -32,7 +32,7 @@ export default function Session() {
   };
 
   return (
-    <div className="flex flex-col py-3 min-h-screen bg-gradient-to-r from-red-500 via-red-400 to-red-300 ...">
+    <div className="flex flex-col py-3 min-h-screen bg-gradient-to-r from-slate-100 via-slate-200 to-slate-300 ...">
       <div className="flex justify-center ...">
         <form
           className="mx-auto -16 max-w-xl sm:mt-10"

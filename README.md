@@ -6,13 +6,11 @@ This is a simple yet efficient poker session tracking application designed to he
 
 ## Screen Shots
 ![alt text](Poker-Buddy-DB.png)
+![alt text](Poker-Buddy-session.png)
 ![alt text](Poker-Buddy-sessions.png)
-![alt text](Poker-Buddy.png)
-
-
-
-
 
 ## Languages and Technologies Used
 
 Mongoose, GraphQL, React, Tailwind CSS, Node, Express, Javascript, HTML, MongoDB
+
+## Live Link
