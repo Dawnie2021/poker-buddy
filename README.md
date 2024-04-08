@@ -5,9 +5,9 @@
 This is a simple yet efficient poker session tracking application designed to help players keep detailed records of their poker sessions. Whether you're a casual player or a seasoned pro, this app will assist you in monitoring your progress, analyzing your performance, and ultimately improving your game.
 
 ## Screen Shots
-![alt text](Poker-Buddy1.png)
-![alt text](Poker-Buddy2.png)
-![alt text](Poker-Buddy3.png)
+![alt text](Poker-Buddy-DB.png)
+![alt text](Poker-Buddy-sessions.png)
+![alt text](Poker-Buddy.png)
 
 
 
