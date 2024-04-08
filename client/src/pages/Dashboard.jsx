@@ -40,7 +40,7 @@ const Dashboard = () => {
                             label: 'Profit',
                             data: results,
                             backgroundColor: 'rgba(39, 174, 227, 0.5)',
-                            borderColor: '<sky-2></sky-2>00',
+                            borderColor: 'sky-200',
                             borderWidth: 2,
                         }]
                     },
