@@ -1,17 +1,12 @@
 import { useState, useRef } from "react";
-import { ChevronDownIcon } from "@heroicons/react/20/solid";
-import { Switch } from "@headlessui/react";
 
 import { useMutation } from "@apollo/client";
 
-import ManageSession from "../pages/ManageSessions";
-
 import { ADD_SESSION } from "../utils/mutations";
-
 
 export default function Session() {
   const [agreed, setAgreed] = useState(false);
-    
+
   const [addSession, { error }] = useMutation(ADD_SESSION);
 
   const handleFormSubmit = async (event) => {
@@ -30,11 +25,10 @@ export default function Session() {
         variables: variables,
       });
 
-      window.location.reload();
+      window.location.assign('/ManageSessions');
     } catch (err) {
       console.error(err);
     }
-
   };
 
   return (

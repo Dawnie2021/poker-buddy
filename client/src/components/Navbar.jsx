@@ -4,7 +4,7 @@ import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
-let navigation = [{ name: "Dashboard", href: "./", current: false }];
+let navigation = [];
 
 if (!Auth.loggedIn()) {
   navigation = navigation.concat([
@@ -12,13 +12,10 @@ if (!Auth.loggedIn()) {
     { name: "Sign Up ", href: "./signup", current: false },
   ]);
 }
-
 if (Auth.loggedIn()) {
   navigation = navigation.concat([
-    { name: "Add Session", href: "./Session", current: false },
-    { name: "Manage Sessions", href: "./ManageSessions", current: false },
-    { name: "Logout", onClick: Auth.logout, current: false },
-
+    { name: "Dashboard", href: "./", current: false },
+    { name: "Sessions", href: "./ManageSessions", current: false },
   ]);
 }
 function classNames(...classes) {
@@ -101,6 +98,20 @@ export default function Navbar() {
                             )}
                           >
                             Settings
+                          </a>
+                        )}
+                      </Menu.Item>
+                      <Menu.Item>
+                        {({ active }) => (
+                          <a
+                            href="./"
+                            onClick={(e) =>Auth.logout} 
+                            className={classNames(
+                              active ? "bg-gray-100" : "",
+                              "block px-4 py-2 text-sm text-gray-700"
+                            )}
+                          >
+                            Log Out
                           </a>
                         )}
                       </Menu.Item>

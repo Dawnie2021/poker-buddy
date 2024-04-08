@@ -1,7 +1,7 @@
 import { useQuery } from "@apollo/client";
 // import queries
 import { QUERY_SESSIONS } from "../utils/queries";
-
+import { Link } from 'react-router-dom';
 function ManageSessions() {
   // function to get data from the query
   const { data, loading, error } = useQuery(QUERY_SESSIONS);
@@ -25,6 +25,16 @@ function ManageSessions() {
   // every session is displayed in the templated table format
   return (
     <>
+    <div className="flex justify-end">
+  <Link to="/Session">
+    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full flex items-center m-5">
+      <span>Add Session</span>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 ml-2">
+        <path fillRule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clipRule="evenodd" />
+      </svg>
+    </button>
+  </Link>
+</div>
       {sessions.map((session) => (
         <div className="flex grid grid-cols-2 gap-3 ml-3 p-2">
           <div className="p-5 rounded-md shadow-lg">
