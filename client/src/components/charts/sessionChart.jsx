@@ -7,6 +7,7 @@ export default function SessionChart({chartData}) {
       <h2 style={{ textAlign: "center" }}>Profit by Session</h2>
       {isChartDataAvailable && <Bar data={chartData.data} 
         options={{
+          
           plugins: {
             title: {
               display: true,

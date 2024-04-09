@@ -7,6 +7,7 @@ export default function ProfitLossChart({chartData}) {
       <h2 style={{ textAlign: "center" }}>Profit by time</h2>
       {isChartDataAvailable && <Line data={chartData.data}
         options={{
+            
           plugins: {
             title: {
               display: true,
