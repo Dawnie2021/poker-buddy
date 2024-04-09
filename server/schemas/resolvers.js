@@ -1,8 +1,10 @@
 const { GraphQLError } = require('graphql');
 const { User, Session } = require('../models');
 const { signToken } = require('../utils/auth');
+const { GraphQLDate } = require('graphql-iso-date');
 
 const resolvers = {
+  Date: GraphQLDate,
   Query: {
     users: async () => {
       return User.find();

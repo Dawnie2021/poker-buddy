@@ -1,4 +1,7 @@
 const typeDefs = `#graphql
+scalar Date
+
+
   type User {
     _id: ID
     username: String
@@ -13,7 +16,7 @@ const typeDefs = `#graphql
   
   type Session {
     _id: ID
-    startDate: String
+    startDate: Date!
     location: String
     results: Float
     hoursPlayed: Float
