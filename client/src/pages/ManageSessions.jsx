@@ -81,9 +81,14 @@ function ManageSessions() {
               </thead>
 
               <tbody className="text-sm">
-              <tr>
+                <tr>
                   <td className="pl-3 font-bold">
-                  {new Date(session.startDate).toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
+                    {new Date(session.startDate).toLocaleDateString(undefined, {
+                      weekday: "long",
+                      year: "numeric",
+                      month: "long",
+                      day: "numeric",
+                    })}
                   </td>
                 </tr>
                 <tr>
@@ -92,10 +97,16 @@ function ManageSessions() {
                   </td>
                 </tr>
                 <tr>
-                  <td className="p-3"> <span className={`p-2 font-bold shadow-md rounded-md ${session.results >= 0 ? 'bg-green-500' : 'bg-red-500'}`}>
+                  <td className="p-3">
+                    {" "}
+                    <span
+                      className={`p-2 font-bold shadow-md rounded-md ${
+                        session.results >= 0 ? "bg-green-500" : "bg-red-500"
+                      }`}
+                    >
                       ${Math.abs(session.results)}
-                      </span>
-                      </td>
+                    </span>
+                  </td>
                 </tr>
                 <tr>
                   <td className="pl-3">{session.notes}</td>

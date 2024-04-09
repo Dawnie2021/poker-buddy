@@ -39,7 +39,7 @@ const router = createBrowserRouter([
         path: "/me",
         element: <Profile />,
       },
-      
+
       {
         path: "/managesessions",
         element: <ManageSessions />,
