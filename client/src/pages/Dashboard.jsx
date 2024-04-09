@@ -1,12 +1,15 @@
-import React, { useEffect, useRef } from 'react';
-import { Chart, LineController, LinearScale, PointElement, CategoryScale, LineElement } from 'chart.js';
+import React, { useEffect, useRef, useState } from 'react';
+import Chart from "chart.js/auto";
+import { CategoryScale } from 'chart.js';
 import { useQuery } from "@apollo/client";
 import { QUERY_SESSIONS } from "../utils/queries";
+import SessionChart from "../components/charts/sessionChart.jsx";
+import ProfitLossChart from "../components/charts/profitLossChart.jsx";
 
-Chart.register(LineController, LinearScale, PointElement, CategoryScale, LineElement);
+Chart.register(CategoryScale);
 
 const Dashboard = () => {
-    const chartRef = useRef(null);
+    
     // function to get data form the query
     const { data, loading, error } = useQuery(QUERY_SESSIONS);
 

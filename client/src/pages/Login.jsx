@@ -42,9 +42,7 @@ const Login = () => {
   const renderForm = () => {
     if (data) {
       return (
-        <p>
-          Success! You may now head <Link to="/dashboard">back to the dashboard.</Link>
-        </p>
+        <p></p>
       );
     }
     return (
