@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
 import Error from "./pages/Error.jsx";
 import Login from "./pages/Login";
-import Profile from "./pages/Profile";
+
 import Signup from "./pages/Signup.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
 import ManageSessions from "./pages/ManageSessions.jsx";
@@ -31,15 +31,8 @@ const router = createBrowserRouter([
         path: "/signup",
         element: <Signup />,
       },
-      {
-        path: "/users/:id",
-        element: <Profile />,
-      },
-      {
-        path: "/me",
-        element: <Profile />,
-      },
-
+      
+      
       {
         path: "/managesessions",
         element: <ManageSessions />,
