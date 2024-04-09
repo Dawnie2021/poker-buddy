@@ -44,9 +44,9 @@ function ManageSessions() {
         </Link>
       </div>
 
-      <div className="flex grid grid-cols-2 gap-5 container mx-auto">
+      <div className="flex grid grid-cols-3 gap-3 justify-center">
         {sessions.map((session) => (
-          <div className="p-5 rounded-md shadow-md">
+          <div className="p-5 rounded-md shadow-md bg-gray-50 m-2">
             <table class="table-auto w-full">
               <thead className="flex justify-between gap-5">
                 <th className="pl-3 text-lg font-bold">{session.location}</th>
@@ -81,13 +81,21 @@ function ManageSessions() {
               </thead>
 
               <tbody className="text-sm">
+              <tr>
+                  <td className="pl-3 font-bold">
+                  {new Date(session.startDate).toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
+                  </td>
+                </tr>
                 <tr>
                   <td className="pl-3 text-gray-400">
                     {session.hoursPlayed} hours
                   </td>
                 </tr>
                 <tr>
-                  <td className="pl-3">$ {session.results}</td>
+                  <td className="p-3"> <span className={`p-2 font-bold shadow-md rounded-md ${session.results >= 0 ? 'bg-green-500' : 'bg-red-500'}`}>
+                      ${Math.abs(session.results)}
+                      </span>
+                      </td>
                 </tr>
                 <tr>
                   <td className="pl-3">{session.notes}</td>
