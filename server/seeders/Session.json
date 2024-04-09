@@ -43,5 +43,61 @@
     "results": 900,
     "hoursPlayed": 5,
     "notes": "Hosted a poker night with friends."
+  },
+
+  {
+    "startDate": "2024-04-02",
+    "location": "Del Lago",
+    "results": 600,
+    "hoursPlayed": 3,
+    "notes": "Had a good night."
+  },
+
+  {
+    "startDate": "2024-04-03",
+    "location": "Turning Stone",
+    "results": -200,
+    "hoursPlayed": 2,
+    "notes": "The games were really bad."
+  },
+
+  {
+    "startDate": "2024-04-04",
+    "location": "Del Lago",
+    "results": -1200,
+    "hoursPlayed": 8,
+    "notes": "Was really card dead. I got coolered in a few big hands."
+  },
+
+  {
+    "startDate": "2024-04-05",
+    "location": "Del Lago",
+    "results": 1600,
+    "hoursPlayed": 6,
+    "notes": "Had a good night. Made up for yesterday."
+  },
+
+  {
+    "startDate": "2024-04-06",
+    "location": "Del Lago",
+    "results": 100,
+    "hoursPlayed": 2,
+    "notes": "Games were slow today."
+  },
+
+  {
+    "startDate": "2024-04-16",
+    "location": "Wynn",
+    "results": 2000,
+    "hoursPlayed": 9,
+    "notes": "Had a good night."
+  },
+
+  {
+    "startDate": "2024-04-02",
+    "location": "Aria",
+    "results": -400,
+    "hoursPlayed": 3,
+    "notes": "Wasn card dead."
   }
 ]
