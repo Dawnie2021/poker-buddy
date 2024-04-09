@@ -8,7 +8,8 @@ This is a simple yet efficient poker session tracking application designed to he
 
 ![alt text](Poker-Buddy-charts.png)
 ![alt text](Poker-Buddy-session.png)
-![alt text](Poker-Buddy_sessions.png)
+![alt text](Poker-Buddy_updated_sessions.png)
+
 
 ## Languages and Technologies Used
 
