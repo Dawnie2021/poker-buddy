@@ -20,9 +20,13 @@ const Dashboard = () => {
       (a, b) => new Date(a.startDate) - new Date(b.startDate)
     );
     let datesAndResults = sortedSessions.map((session) => {
-        const date = new Date(session.startDate);
-        const formattedDate = `${date.toLocaleDateString(undefined, { year: 'numeric', month: 'numeric', day: 'numeric' })}`;
-        return { date: formattedDate, results: session.results };
+      const date = new Date(session.startDate);
+      const formattedDate = `${date.toLocaleDateString(undefined, {
+        year: "numeric",
+        month: "numeric",
+        day: "numeric",
+      })}`;
+      return { date: formattedDate, results: session.results };
     });
 
     let dates = datesAndResults.map((item) => item.date);
@@ -35,22 +39,28 @@ const Dashboard = () => {
       }
       return acc;
     }, []);
-    
+
     setSessionChartData({
-        data: {
-            labels: dates,
-            datasets: [
-                { 
-                    data: results,
-                    backgroundColor: results.map(datapoint => datapoint >= 0 ? '#10B981' : '#EF4444'),
-                    borderColor: results.map(datapoint => datapoint >= 0 ? '#059669' : '#DC2626'), 
-                    borderWidth: 3,
-                    borderRadius: 10
-                }
-            ]
-        }
-    })
-    setProfitLossChartData({data: {labels: dates, datasets: [{ data: cumulativeResults }]}})
+      data: {
+        labels: dates,
+        datasets: [
+          {
+            data: results,
+            backgroundColor: results.map((datapoint) =>
+              datapoint >= 0 ? "#10B981" : "#EF4444"
+            ),
+            borderColor: results.map((datapoint) =>
+              datapoint >= 0 ? "#059669" : "#DC2626"
+            ),
+            borderWidth: 3,
+            borderRadius: 10,
+          },
+        ],
+      },
+    });
+    setProfitLossChartData({
+      data: { labels: dates, datasets: [{ data: cumulativeResults }] },
+    });
   };
 
   const [sessionChartData, setSessionChartData] = useState({});
@@ -67,10 +77,16 @@ const Dashboard = () => {
     <div className="m-4">
       <div className="flex text-center p-5 gap-5 bg-gray-100 rounded-md shadow-lg m-4">
         <div className="flex-1 p-5 rounded-md shadow-lg bg-gray-50">
-          <SessionChart chartData={sessionChartData} options={{ responsive: true, maintainAspectRatio: false }}/>
+          <SessionChart
+            chartData={sessionChartData}
+            options={{ responsive: true, maintainAspectRatio: false }}
+          />
         </div>
         <div className="flex-1 p-5 rounded-md shadow-md bg-gray-50">
-          <ProfitLossChart chartData={profitLossChartData} options={{ responsive: true, maintainAspectRatio: false }}/>
+          <ProfitLossChart
+            chartData={profitLossChartData}
+            options={{ responsive: true, maintainAspectRatio: false }}
+          />
         </div>
       </div>
     </div>

@@ -55,4 +55,3 @@ export const QUERY_SESSIONS = gql`
     }
   }
 `;
-
