@@ -17,4 +17,5 @@ Mongoose, GraphQL, React, Tailwind CSS, Node, Express, Javascript, HTML, MongoDB
 
 ## Live Link
 
-https://poker-buddy.onrender.com/
+https://poker-buddy-1.onrender.com/
+
