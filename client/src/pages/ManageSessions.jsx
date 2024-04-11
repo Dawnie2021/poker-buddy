@@ -44,7 +44,7 @@ function ManageSessions() {
         </Link>
       </div>
 
-      <div className="flex grid grid-cols-3 gap-3 justify-center">
+      <div className="flex grid grid-cols-1 md:grid-cols-3 gap-3 justify-center">
         {sessions.map((session) => (
           <div className="p-5 rounded-md shadow-md bg-gray-50 m-2">
             <table class="table-auto w-full">
