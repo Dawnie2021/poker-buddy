@@ -75,7 +75,7 @@ const Dashboard = () => {
 
   return (
     <div className="m-4">
-      <div className="flex text-center p-5 gap-5 bg-gray-100 rounded-md shadow-lg m-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 text-center p-5 gap-5 bg-gray-100 rounded-md shadow-lg m-4">
         <div className="flex-1 p-5 rounded-md shadow-lg bg-gray-50">
           <SessionChart
             chartData={sessionChartData}

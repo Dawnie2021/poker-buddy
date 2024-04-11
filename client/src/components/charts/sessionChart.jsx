@@ -9,6 +9,7 @@ export default function SessionChart({ chartData }) {
         <Bar
           data={chartData.data}
           options={{
+            responsive: true,
             plugins: {
               title: {
                 display: true,
